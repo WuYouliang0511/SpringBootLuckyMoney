@@ -194,7 +194,7 @@ public class LuckyMoneyController {
         } else {
             InputStream ins = null;
             ins = multipartFile.getInputStream();
-            String path = "E:";
+            String path = "/usr/wyl/resource";
             toFile = new File(path, "123.txt");
             boolean a = inputStreamToFile(ins, toFile);
             ins.close();
