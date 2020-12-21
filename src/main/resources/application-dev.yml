@@ -1,0 +1,28 @@
+server:
+  port: 8088
+  servlet:
+    context-path: /
+
+age: 1000
+name: 邬友亮1
+description: 姓名:${name},年龄:${age}岁--------(从yml获取)
+
+
+
+limit:
+  age: 10
+  name: 邬友亮1
+  description: 姓名:${limit.name},年龄:${limit.age}岁--------(从配置类获取)
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://jarka.cn:3306/luckymoney?serverTimezone=Asia/Shanghai&characterEncoding=utf-8
+    username: root
+    password: Wyl19970511...
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database: mysql
+    open-in-view: false
